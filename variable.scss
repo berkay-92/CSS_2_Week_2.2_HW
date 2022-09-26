@@ -1,0 +1,53 @@
+$navbarbackgroundcolor: RGB(202, 193, 193);
+$mainbackgroundcolor: RGB(25, 25, 25);
+$hicolor: RGB(242, 32, 1);
+$homebackgroundcolor: RGB(235, 31, 1);
+$homecolor: RGB(255, 255, 255);
+$aboutcolor:RGB(2, 2, 2);
+$contactcolor:RGB(127, 122, 122);
+$cartbackgroundcolor: RGB(255, 255, 255);
+$categorybackgroundcolor: RGB(93, 93, 93);
+$categorycolor: RGB(0, 0, 0);
+$graytext: RGB(91, 91, 91);
+%zero {
+    margin: 0;
+    padding: 0;
+}
+%space1 {
+    height: 1vh;
+}
+%space2 {
+    height: 3vh;
+}
+%buttonwh {
+    width: 30%;
+    height: 5vh;
+}
+%radius {
+    border-radius: 15px;
+}
+%radiustop {
+    border-radius: 14px 14px 0 0;
+}
+%displayflex {
+    display: flex;
+}
+%center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%alignitemscenter {
+    display: flex;
+    align-items: center;
+}
+%spacearound {
+    display: flex;
+    justify-content: space-around;
+}
+%fontfamily {
+    font-family: Arial, Helvetica, sans-serif;
+}
+%fontbold {
+    font-weight: bold;
+}

@@ -1,0 +1,130 @@
+@import './variable.scss';
+body {
+    @extend %zero;
+    background-color: $mainbackgroundcolor;
+}
+.nav {
+    width: 100%;
+    height: 7vh;
+    background-color: $navbarbackgroundcolor;
+    @extend %alignitemscenter;
+    border-radius: 0 30px 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &__himovie {
+    @extend %displayflex;
+    @extend %fontbold;
+    @extend %fontfamily;
+    width: 10%;
+        &__hi {
+            color: $hicolor;
+        }
+        &:hover {
+            font-size: 25px;
+        }
+    }
+    &__hicoders {
+        width: 50%;
+        margin-left: 40%;
+    }
+    &__list {
+        list-style: none;
+        width: 30%;
+        @extend %spacearound;
+        &:hover {
+            cursor: grab;
+        }
+        &__home {
+            background-color: $homebackgroundcolor;
+            color: $homecolor;
+            &:hover {
+                color: $categorycolor
+            }
+        }
+        &__button {
+            @extend %buttonwh;
+            @extend %radius;
+            @extend %center;
+            @extend %fontfamily;
+            font-weight: lighter;
+        }
+        &__contact {
+            &:hover {
+                cursor: no-drop;
+            }
+        }
+    }
+}
+.main {
+    @extend %spacearound;
+    width: 100%;
+    margin-top: 5%;
+    &__cart {
+        @extend %displayflex;
+        flex-direction: column;
+        @extend %radius;
+        @extend %fontfamily;
+        font-weight: lighter;
+        width: 30%;
+        height: 75vh;
+        background-color: $cartbackgroundcolor;
+        padding-bottom: 1%;
+        &:hover {
+            box-shadow: 10px 10px 100px 0px white;
+        }
+        &__space1 {
+            @extend %space1
+        } 
+        &__image {
+            width: 100%;
+            @extend %radiustop;
+        }
+        &__category {
+            height: 3vh;
+            background-color: $categorybackgroundcolor;
+            @extend %radius;
+            margin: 0 5% 0 5%;
+            @extend %center;
+            color: $categorycolor;
+            @extend %fontbold;
+            font-size: 1em;
+        }
+        &__name {
+            margin: 0 5% 0 5%;
+            @extend %fontbold;
+            font-size:1.5em
+        }
+        &__plot {
+            margin: 0 5% 0 5%;
+            @extend %fontfamily;
+            color: $graytext;
+        }
+        &__space2 {
+            @extend %space2;
+        }
+        &__profile {
+            margin: 0 5% 0 5%;
+            // background-color: blue;
+            display: flex;
+            
+            margin-top: auto;
+            &__avatar {
+                width: 40px;
+                border-radius: 50%;
+            }
+            &__about {
+                display: flex;
+                flex-direction: column;
+                margin-left: 5%;
+                &__name {
+                    @extend %fontbold;
+                }
+                &__year {
+                    color: $graytext;
+                }
+            }
+        }
+    }
+}
+
